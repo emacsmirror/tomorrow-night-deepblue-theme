@@ -45,10 +45,11 @@
 ;; (use-package tomorrow-night-deepblue-theme
 ;;   :ensure t
 ;;   :config
-;;   ;; Disable all themes and load the Tomorrow Night Deep Blue theme
-;;   (mapc #'disable-theme custom-enabled-themes)
-;;   ;; Load the tomorrow-night-deepblue theme
-;;   (load-theme 'tomorrow-night-deepblue t))
+;;   (let ((inhibit-redisplay t))
+;;     ;; Disable all active themes
+;;     (mapc #'disable-theme custom-enabled-themes)
+;;     ;; Load the tomorrow-night-deepblue theme
+;;     (load-theme 'tomorrow-night-deepblue t)))
 ;;
 ;; Links:
 ;; ------
