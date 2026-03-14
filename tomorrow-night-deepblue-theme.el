@@ -43,7 +43,6 @@
 ;; Installation from MELPA:
 ;; ------------------------
 ;; (use-package tomorrow-night-deepblue-theme
-;;   :ensure t
 ;;   :config
 ;;   (let ((inhibit-redisplay t))
 ;;     ;; Disable all active themes
